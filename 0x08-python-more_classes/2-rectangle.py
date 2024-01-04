@@ -4,13 +4,12 @@ Display a Rectangle
 """
 
 
-
 class Rectangle:
     """Display of a Rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes of the rectangle"""
-        self.height = height
         self.width = width
+        self.height = height
     
     @property
     def width(self):
