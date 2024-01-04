@@ -4,12 +4,14 @@ Display a Rectangle
 """
 
 
+
 class Rectangle:
     """Display of a Rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes of the rectangle"""
         self.height = height
         self.width = width
+    
     @property
     def width(self):
         """The private instance attribute width"""
@@ -22,6 +24,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+    
     @property
     def height(self):
         """The private instance attribute height"""
