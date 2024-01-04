@@ -2,12 +2,15 @@
 """
 Display a Rectangle
 """
+
+
 class Rectangle:
     """Display of a Rectangle"""
     def __init__(self, width=0, height=0):
+
         """Initializes of the rectangle"""
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -36,6 +39,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+    
     def area(self):
         """Return the area of the rectangle"""
         return self.__width * self.__height
