@@ -4,7 +4,6 @@ Display a Rectangle
 """
 
 
-
 class Rectangle:
     """Display of a Rectangle"""
     def __init__(self, width=0, height=0):
@@ -19,7 +18,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """The private instance attribute width"""
+        """Setter the private instance attribute width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
