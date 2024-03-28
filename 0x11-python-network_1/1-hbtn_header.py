@@ -7,6 +7,7 @@ the header of the response.
 import urllib.request
 import sys
 
+
 if __name__ == "__main__":
     # Get URL from command line argument
     url = sys.argv[1]
