@@ -13,9 +13,5 @@ if __name__ == "__main__":
     url = sys.argv[1]
     # Send request and handle response
     with urllib.request.urlopen(url) as response:
-        # Check if 'X-Request-Id' exists in the response headers
-        if 'X-Request-Id' in response.headers:
-            # Display the value of 'X-Request-Id' variable
-            print(response.headers['X-Request-Id'])
-        else:
-            print("X-Request-Id not found in response headers.")
+        html_id = response.info().get('X-Request-Id')
+        print(html_id)
