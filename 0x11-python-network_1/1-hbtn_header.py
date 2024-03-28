@@ -11,7 +11,6 @@ import sys
 if __name__ == "__main__":
     # Get URL from command line argument
     url = sys.argv[1]
-
     # Send request and handle response
     with urllib.request.urlopen(url) as response:
         # Check if 'X-Request-Id' exists in the response headers
